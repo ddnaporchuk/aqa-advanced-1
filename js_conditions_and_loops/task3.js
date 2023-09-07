@@ -5,7 +5,7 @@
 
 //Цикл for:
 console.log("Using the for method:")
-const number = 9;
+let number = 9;
 
 for (let i=1; i<11; i++) {
     const result = number * i;
