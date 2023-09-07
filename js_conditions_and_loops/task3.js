@@ -9,7 +9,7 @@ const number = 9;
 
 for (let i=1; i<11; i++) {
     const result = number * i;
-    console.log(`9 x ${i} = ${result}`);
+    console.log(`${number} x ${i} = ${result}`);
 }
 
 //Цикл while:
@@ -18,6 +18,6 @@ let count = 1;
 
 while (count < 11) {
     const result = number * count;
-    console.log(`9 x ${count} = ${result}`);
+    console.log(`${number} x ${count} = ${result}`);
     count++;
 }
