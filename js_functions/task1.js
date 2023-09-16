@@ -1,15 +1,15 @@
 
-function area1(width, height) {
+function calculateArea(width, height) {
     return width * height;
 }
 
-console.log(`This is declaration function: ${area1(8, 4)}`); // This is the result of the function: 32;
+console.log(`This is declaration function: ${calculateArea(8, 4)}`); // This is the result of the function: 32;
 
-const area2 = function (width, height) {
+const calculateArea2 = function (width, height) {
     return width * height;
 }
 
-console.log(`This is expression function: ${area2(12, 7)}`); // This is the result of the function: 84; 
+console.log(`This is expression function: ${calculateArea2(12, 7)}`); // This is the result of the function: 84; 
 
-const area3 = (width, height) => width * height;
-console.log(`This is arrow function: ${area3(7, 18)}`); // This is the result of the function: 126;
+const calculateArea3 = (width, height) => width * height;
+console.log(`This is arrow function: ${calculateArea3(7, 18)}`); // This is the result of the function: 126;

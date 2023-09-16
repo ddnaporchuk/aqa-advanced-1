@@ -1,9 +1,8 @@
-function factorial(num){
-    console.log(num);
-    if (num <= 0){
-        return;
-    } 
-    factorial(num - 1);
+function countdown(num) {
+    if (num > 0) {
+        console.log(num);
+        countdown(num - 1);
+    }
 }
 
-factorial(5);
+countdown(5);

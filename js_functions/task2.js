@@ -1,11 +1,16 @@
-function check(age) {
-    if (age >= 18){
-        console.log("This person is adult!");
-        return
+function checkAdult(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return false;
     }
-    console.log("This person isn't yet an adult. Go home!")
 }
 
-check(25); // This person is adult!
+const isAdult = 25;
+const isYoung = 15;
 
-check(15); // This person isn't yet an adult. Go home!
+const result1 = checkAdult(isAdult);
+const result2 = checkAdult(isYoung);
+
+console.log(`Вік ${isAdult} - дорослий: ${result1}`);
+console.log(`Вік ${isYoung} - дорослий: ${result2}`);
