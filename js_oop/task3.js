@@ -2,12 +2,12 @@ const Book = require('./task1.js');
 const EBook = require('./task2.js');
 
 console.log("Book number 1:")
-const book1 = new Book("Atlas Shrugged", "Ayn Rand", 1957); // Створюємо інстанси класу Book
+const book1 = new Book("Atlas Shrugged", "Ayn Rand", 1957); // Створюємо інстанс класу Book
 book1.printInfo();
 console.log("-------------------------------------------------")
 
 console.log("Book number 2:")
-const book2 = new Book("Nineteen Eighty-Four", "George Orwell", 1949); // Створюємо інстанси класу Book
+const book2 = new Book("Nineteen Eighty-Four", "George Orwell", 1949); // Створюємо інстанс класу Book
 book2.printInfo();
 console.log("-------------------------------------------------")
 

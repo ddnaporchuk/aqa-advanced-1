@@ -1,26 +1,29 @@
 const Book = require('./task1.js');
 
 class EBook extends Book {
-    constructor(_title, _author, _dateOfPublication, _fileFormat){
-        super(_title, _author, _dateOfPublication);
-        this._fileFormat = _fileFormat;
+    constructor(title, author, dateOfPublication, fileFormat){
+        super(title, author, dateOfPublication);
+        this.fileFormat = fileFormat;
     }
     printInfo (){
         super.printInfo();
-        console.log(`Format file: ${this._fileFormat}`);
+        console.log(`Format file: ${this.fileFormat}`);
     }
     get format(){
-        return this._fileFormat;
+        return this.fileFormat;
     }
     set format(newFormat) {
         if (typeof newFormat === "string"){
-            this._fileFormat = newFormat;
+            this.fileFormat = newFormat;
         } else {
             console.log("Format file must be a string")
         }
     }
-    static createEBookFromBook(book, _fileFormat){
-        return new EBook(book._title, book._author, book._dateOfPublication, _fileFormat);
+    static createEBookFromBook(book, fileFormat){
+        const title = book.title;
+        const author = book.author;
+        const year = book.year;
+        return new EBook(book.title, book.author, book.dateOfPublication, fileFormat);
     }
 }
 

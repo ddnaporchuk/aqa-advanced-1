@@ -1,14 +1,14 @@
 class Book {
-    constructor(_title, _author, _dateOfPublication){
-        this._title = _title;
-        this._author = _author;
-        this._dateOfPublication = _dateOfPublication;
+    constructor(title, author, dateOfPublication){
+        this._title = title;
+        this._author = author;
+        this._dateOfPublication = dateOfPublication;
     }
 
     printInfo(){
-        console.log(`Title: ${this._title}`)
-        console.log(`Author: ${this._author}`)
-        console.log(`Year of publication: ${this._dateOfPublication}`)
+        console.log(`Title: ${this.title}`)
+        console.log(`Author: ${this.author}`)
+        console.log(`Year of publication: ${this.dateOfPublication}`)
     } 
 
     get title(){
@@ -45,16 +45,9 @@ class Book {
     static getOldestBook(books){
         if(books.length === 0){
             return null;
-        };
-    
-    
-        let oldestBook = books[0];
-        for (let i = 1; i < books.length; i++) {
-            if (books[i]._dateOfPublication < oldestBook._dateOfPublication) {
-                oldestBook = books[i];
-            }
         }
-        return oldestBook;
+    
+        return [...books].sort((a, b) => a.dateOfPublication - b.dateOfPublication)[0];
     };
 }
 
