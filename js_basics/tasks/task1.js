@@ -1,7 +1,7 @@
 //Оголошення змінних для примітивних типів:
 // string
 
-const myName = "Denis";
+const myName = 'Denis';
 
 console.log(myName);
 
@@ -11,17 +11,16 @@ let age = 24;
 
 console.log(age);
 
-// bollean 
+// bollean
 
 let isMarried = false;
 let isSingle = true;
 
 if (isSingle) {
-    console.log("This is true!");
-    }
-else {
-    console.log("This is not true!");
-    }
+  console.log('This is true!');
+} else {
+  console.log('This is not true!');
+}
 
 // null
 
