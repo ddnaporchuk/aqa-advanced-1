@@ -4,11 +4,17 @@
   "description": "qa courses",
   "main": "task1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.js\""
   },
   "author": "Denis Naporchuk",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-google": "^0.14.0",
+    "prettier": "3.0.3"
   }
 }
